@@ -2,49 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Basic Website</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #f0f4f8;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
-    }
-
-    h1 {
-      color: #333;
-    }
-
-    button {
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yugi — Engineer & Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Welcome to My Basic Website 🌐</h1>
-  <button onclick="sayHello()">Click Me!</button>
+<body class="bg-black text-white font-sans">
 
-  <script>
-    function sayHello() {
-      alert("Hello, thanks for clicking! 😄");
-    }
-  </script>
+  <!-- Hero -->
+  <section class="min-h-screen flex items-center justify-center text-center px-6">
+    <div>
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Yugi</h1>
+      <p class="text-xl md:text-2xl text-gray-400 mb-6">Engineer • Developer • Builder</p>
+      <p class="max-w-xl mx-auto text-gray-500">
+        I craft high-impact software and AI-powered web applications using modern frameworks like Nuxt 3 and pnpm. Obsessed with clean code, scalability, and innovation.
+      </p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-20 px-6 bg-gray-900">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-gray-400">
+        I'm a forward-thinking software engineer passionate about solving real-world problems with code. My core stack includes Vue/Nuxt, Node, Tailwind, and cloud infrastructure. Whether it's building dev tools, SaaS products, or AI integrations—I get things shipped.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Core Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-300">
+        <div class="bg-gray-800 p-4 rounded-lg text-center">Nuxt 3</div>
+        <div class="bg-gray-800 p-4 rounded-lg text-center">Vue.js</div>
+        <div class="bg-gray-800 p-4 rounded-lg text-center">Node.js</div>
+        <div class="bg-gray-800 p-4 rounded-lg text-center">Tailwind CSS</div>
+        <div class="bg-gray-800 p-4 rounded-lg text-center">pnpm</div>
+        <div class="bg-gray-800 p-4 rounded-lg text-center">AI Integration</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-20 px-6 bg-gray-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Let’s Connect</h2>
+      <p class="text-gray-400 mb-6">Open to collaborations, freelance, or just nerding out on code.</p>
+      <a href="mailto:youremail@example.com" class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+        Email Me
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-600 text-sm bg-black">
+    © 2025 Yugi. Built with Tailwind.
+  </footer>
+
 </body>
 </html>
